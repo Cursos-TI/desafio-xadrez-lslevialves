@@ -2,7 +2,7 @@
 
 int main(){
 
-    int escolhaPeca; 
+    int escolhaPeca, movimentoCompleto; 
     int i, j, k;
     char continuar;
 
@@ -11,6 +11,8 @@ int main(){
         printf("1 - Torre\n");
         printf("2 - Bispo\n");
         printf("3 - Rainha\n");
+        printf("4 - Cavalo\n");
+        printf("Escolha uma peça para ver seus movimentos: ");
         scanf("%d", &escolhaPeca);
 
         switch (escolhaPeca)
@@ -39,7 +41,18 @@ int main(){
                 k++;
             } while(k < 8);
             break;
-
+        
+        case 4:
+            while (movimentoCompleto--)
+            {
+                for (i = 0; i < 2; i++){
+                    printf("Cima\n");
+                            
+                }
+                printf("Direita\n");   
+           
+                break;
+            }
         default:
             printf("Opção inválida\n");
             continue;
